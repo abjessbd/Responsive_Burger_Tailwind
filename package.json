@@ -3,17 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "responsive_burger_Official Website",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
-    "tailwindcss": "^3.4.4",
-    "vite": "^5.3.3"
+    "tailwindcss": "^3.4.6"
   }
 }
