@@ -12,28 +12,28 @@
 
 <body>
     <!-- Header Area -->
-    <header class="container w-full max-w-5xl bg-primaryColor">
-        <nav class="flex justify-between items-center p-8 cursor-pointer relative">
+    <header class="container w-full max-w-5xl bg-primaryColor border-b border-yelloColor fixed top-0 left-0 z-50">
+        <nav class="flex justify-between items-center p-4 cursor-pointer relative">
             <div class="uppercase text-2xl">
                 <a href="#"> Ber<span class="text-yelloColor">ger</span> </a>
             </div>
             <div class="flex items-center gap-10">
-                <div class="fixed top-20 left-0 w-full text-center md:static">
+                <div id="nav" class="fixed top-20 left-0 w-full text-center hidden md:block md:static">
                     <ul class="flex flex-col md:flex-row gap-5">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#aboutus">About Us</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#review">Review</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a class="nav-item hover:text-yelloColor transition-all duration-200" href="#">Home</a></li>
+                        <li><a class="nav-item hover:text-yelloColor transition-all duration-200" href="#aboutus">About Us</a></li>
+                        <li><a class="nav-item hover:text-yelloColor transition-all duration-200" href="#menu">Menu</a></li>
+                        <li><a class="nav-item hover:text-yelloColor transition-all duration-200" href="#review">Review</a></li>
+                        <li><a class="nav-item hover:text-yelloColor transition-all duration-200" href="#contact">Contact</a></li>
                     </ul>
-                    <div class="text-2xl fixed top-8 right-12 hidden">
+                    <div class="text-2xl fixed top-4 right-8 md:hidden hover:text-yelloColor transition-all duration-200">
                         <i id="close-btn" class="ri-close-line"></i>
                     </div>
                 </div>
-                <div class="text-2xl flex items-center space-x-5">
-                    <i id="dark-light-btn" class="ri-moon-line"></i>
+                <div id="btn-container" class="text-2xl flex items-center space-x-5">
+                    <i id="dark-light-btn" class="ri-moon-line hover:text-yelloColor transition-all duration-200"></i>
                     <div class="md:hidden">
-                        <i id="menu-btn" class="ri-menu-2-line"></i>
+                        <i id="menu-btn" class="ri-menu-2-line hover:text-yelloColor transition-all duration-200"></i>
                     </div>
                 </div>
             </div>
@@ -42,6 +42,9 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/c64fed3c59.js" crossorigin="anonymous"></script>
+
+    <!-- Main Js File -->
+     <script src="./main.js"></script>
 </body>
 
 </html>
